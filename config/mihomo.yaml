@@ -1,0 +1,868 @@
+mixed-port: 7890
+allow-lan: false
+bind-address: 127.0.0.1
+mode: rule
+log-level: info
+ipv6: false
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: strict
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  nameserver:
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+  proxy-server-nameserver:
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+  fallback:
+  - https://1.1.1.1/dns-query
+  - https://8.8.8.8/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+  fake-ip-filter:
+  - '*.lan'
+  - '*.local'
+  - localhost
+  - +.msftconnecttest.com
+  - +.msftncsi.com
+proxies:
+- type: ss
+  server: 172.64.152.216
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F01-ss
+- type: ss
+  server: 104.18.35.15
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F02-ss
+- type: ss
+  server: 172.64.145.158
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F03-ss
+- type: ss
+  server: 172.64.145.202
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F04-ss
+- type: ss
+  server: cf.130519.xyz
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F05-ss
+- type: ss
+  server: 96.126.190.196
+  port: 443
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  name: 🆓F06-ss
+- type: ss
+  server: cf.877774.xyz
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F07-ss
+- type: ss
+  server: 104.18.42.54
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F08-ss
+- type: ss
+  server: 124.57.36.207
+  port: 37020
+  cipher: none
+  password: https://t.me/WangCai2🇨🇳
+  name: 🆓F09-ss
+- type: ss
+  server: 104.18.43.174
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F10-ss
+- type: ss
+  server: 104.21.94.161
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F11-ss
+- type: ss
+  server: 36.38.117.86
+  port: 11965
+  cipher: none
+  password: https://t.me/WangCai2🇨🇳
+  name: 🆓F12-ss
+- type: ss
+  server: 14.46.128.84
+  port: 25010
+  cipher: none
+  password: https://t.me/WangCai2🇨🇳
+  name: 🆓F13-ss
+- type: ss
+  server: 183.108.82.157
+  port: 10002
+  cipher: none
+  password: https://t.me/WangCai2🇨🇳
+  name: 🆓F14-ss
+- type: ss
+  server: 175.204.72.94
+  port: 11001
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  name: 🆓F15-ss
+- type: ss
+  server: 168.126.204.135
+  port: 10035
+  cipher: none
+  password: https://t.me/WangCai2🇨🇳
+  name: 🆓F16-ss
+- type: ss
+  server: 47.82.155.79
+  port: 443
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  name: 🆓F17-ss
+- type: trojan
+  server: ja262.magiclampcloud.cn
+  port: 59443
+  uuid: 002023c45d18bca3eba2757bb683309a
+  password: 002023c45d18bca3eba2757bb683309a
+  skip-cert-verify: false
+  name: 🆓F18-trojan
+- type: trojan
+  server: ja304.magiclampcloud.cn
+  port: 59443
+  uuid: 06cf12a7fab279375e55e2f0cfdef381
+  password: 06cf12a7fab279375e55e2f0cfdef381
+  skip-cert-verify: false
+  sni: ja304.magiclampcloud.cn
+  name: 🆓F19-trojan
+- type: trojan
+  server: tyy129.magiclampcloud.com
+  port: 59443
+  uuid: 0255972f1b5cc33c6f87fbc561085684
+  password: 0255972f1b5cc33c6f87fbc561085684
+  skip-cert-verify: false
+  sni: tyy129.magiclampcloud.com
+  name: 🆓F20-trojan
+- type: ss
+  server: 47.82.155.79
+  port: 8443
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  name: 🆓F21-ss
+- type: trojan
+  server: 06.tokyometropolis.kyiv.ua
+  port: 2053
+  uuid: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  name: 🆓F22-trojan
+- type: ss
+  server: 103.181.177.88
+  port: 443
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  name: 🆓F23-ss
+- type: trojan
+  server: 07.tokyometropolis.odesa.ua
+  port: 2053
+  uuid: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  name: 🆓F24-trojan
+- type: trojan
+  server: 02.tokyometropolis.ivano-frankivsk.ua
+  port: 2053
+  uuid: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  name: 🆓F25-trojan
+- type: ss
+  server: cf.008500.xyz
+  port: 443
+  cipher: none
+  password: 3e96ef7d-8637-42c2-ac73-75182196e755
+  name: 🆓F26-ss
+- type: trojan
+  server: a10.taipeicitygovernment.kyiv.ua
+  port: 3462
+  uuid: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  name: 🆓F27-trojan
+- type: ss
+  server: 172.64.147.104
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F28-ss
+- type: trojan
+  server: 04.tokyometropolis.kherson.ua
+  port: 2053
+  uuid: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  name: 🆓F29-trojan
+- type: ss
+  server: 172.66.42.200
+  port: 2083
+  cipher: none
+  password: https://t.me/WangCai2🇨🇳
+  name: 🆓F30-ss
+- type: trojan
+  server: 08.tokyometropolis.odessa.ua
+  port: 2053
+  uuid: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  name: 🆓F31-trojan
+- type: trojan
+  server: 01.tokyometropolis.chernigov.ua
+  port: 2053
+  uuid: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  name: 🆓F32-trojan
+- type: trojan
+  server: a07.taipeicitygovernment.if.ua
+  port: 3462
+  uuid: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  name: 🆓F33-trojan
+- type: ss
+  server: 104.26.5.60
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F34-ss
+- type: ss
+  server: 172.67.70.92
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F35-ss
+- type: ss
+  server: 69.84.182.16
+  port: 443
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  name: 🆓F36-ss
+- type: ss
+  server: afrcloud22.mmv.kr
+  port: 80
+  cipher: none
+  password: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
+  name: 🆓F37-ss
+- type: ss
+  server: 172.66.42.200
+  port: 8443
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  name: 🆓F38-ss
+- type: trojan
+  server: a12.taipeicitygovernment.org.ua
+  port: 3462
+  uuid: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  name: 🆓F39-trojan
+- type: trojan
+  server: a01.taipeicitygovernment.biz.ua
+  port: 3462
+  uuid: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  name: 🆓F40-trojan
+- type: ss
+  server: 104.19.177.137
+  port: 2096
+  cipher: none
+  password: 0195c476-63f8-7232-ac42-0ac1eaabe934
+  name: 🆓F41-ss
+- type: ss
+  server: 103.133.1.38
+  port: 443
+  cipher: none
+  password: 3e96ef7d-8637-42c2-ac73-75182196e755
+  name: 🆓F42-ss
+- type: trojan
+  server: 02a.seoulcitygovernment.com.ua
+  port: 2050
+  uuid: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  name: 🆓F43-trojan
+- type: ss
+  server: 104.18.41.190
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F44-ss
+- type: ss
+  server: 190.93.246.16
+  port: 443
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  name: 🆓F45-ss
+- type: ss
+  server: 49.142.200.31
+  port: 11434
+  cipher: none
+  password: https://t.me/WangCai2🇨🇳
+  name: 🆓F46-ss
+- type: ss
+  server: 216.205.52.16
+  port: 443
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  name: 🆓F47-ss
+- type: ss
+  server: 162.159.25.12
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F48-ss
+- type: trojan
+  server: a11.taipeicitygovernment.net.ua
+  port: 3462
+  uuid: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  name: 🆓F49-trojan
+- type: ss
+  server: 162.159.36.5
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F50-ss
+- type: ss
+  server: 162.159.36.20
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F51-ss
+- type: ss
+  server: 162.159.39.33
+  port: 443
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+  name: 🆓F52-ss
+- type: trojan
+  server: a09.taipeicitygovernment.kiev.ua
+  port: 3462
+  uuid: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  name: 🆓F53-trojan
+- type: ss
+  server: 161.33.38.253
+  port: 443
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  name: 🆓F54-ss
+- type: trojan
+  server: 01a.seoulcityhall.com.ua
+  port: 2051
+  uuid: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  name: 🆓F55-trojan
+- type: ss
+  server: 45.40.147.16
+  port: 443
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  name: 🆓F56-ss
+- type: ss
+  server: 50.62.195.16
+  port: 443
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  name: 🆓F57-ss
+- type: ss
+  server: 198.12.144.16
+  port: 443
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  name: 🆓F58-ss
+- type: ss
+  server: 45.40.154.16
+  port: 443
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  name: 🆓F59-ss
+- type: ss
+  server: 198.71.188.16
+  port: 443
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  name: 🆓F60-ss
+proxy-groups:
+- name: 节点选择
+  type: select
+  proxies:
+  - 🆓 免费节点
+  - 🚀 自动选择
+  - 🚀 故障转移
+  - 🚀 手动切换
+  - 🆓F01-ss
+  - 🆓F02-ss
+  - 🆓F03-ss
+  - 🆓F04-ss
+  - 🆓F05-ss
+  - 🆓F06-ss
+  - 🆓F07-ss
+  - 🆓F08-ss
+  - 🆓F09-ss
+  - 🆓F10-ss
+  - 🆓F11-ss
+  - 🆓F12-ss
+  - 🆓F13-ss
+  - 🆓F14-ss
+  - 🆓F15-ss
+  - 🆓F16-ss
+  - 🆓F17-ss
+  - 🆓F18-trojan
+  - 🆓F19-trojan
+  - 🆓F20-trojan
+  - 🆓F21-ss
+  - 🆓F22-trojan
+  - 🆓F23-ss
+  - 🆓F24-trojan
+  - 🆓F25-trojan
+  - 🆓F26-ss
+  - 🆓F27-trojan
+  - 🆓F28-ss
+  - 🆓F29-trojan
+  - 🆓F30-ss
+  - 🆓F31-trojan
+  - 🆓F32-trojan
+  - 🆓F33-trojan
+  - 🆓F34-ss
+  - 🆓F35-ss
+  - 🆓F36-ss
+  - 🆓F37-ss
+  - 🆓F38-ss
+  - 🆓F39-trojan
+  - 🆓F40-trojan
+  - 🆓F41-ss
+  - 🆓F42-ss
+  - 🆓F43-trojan
+  - 🆓F44-ss
+  - 🆓F45-ss
+  - 🆓F46-ss
+  - 🆓F47-ss
+  - 🆓F48-ss
+  - 🆓F49-trojan
+  - 🆓F50-ss
+  - 🆓F51-ss
+  - 🆓F52-ss
+  - 🆓F53-trojan
+  - 🆓F54-ss
+  - 🆓F55-trojan
+  - 🆓F56-ss
+  - 🆓F57-ss
+  - 🆓F58-ss
+  - 🆓F59-ss
+  - 🆓F60-ss
+  - DIRECT
+- name: 🚀 手动切换
+  type: select
+  proxies:
+  - 🆓F01-ss
+  - 🆓F02-ss
+  - 🆓F03-ss
+  - 🆓F04-ss
+  - 🆓F05-ss
+  - 🆓F06-ss
+  - 🆓F07-ss
+  - 🆓F08-ss
+  - 🆓F09-ss
+  - 🆓F10-ss
+  - 🆓F11-ss
+  - 🆓F12-ss
+  - 🆓F13-ss
+  - 🆓F14-ss
+  - 🆓F15-ss
+  - 🆓F16-ss
+  - 🆓F17-ss
+  - 🆓F18-trojan
+  - 🆓F19-trojan
+  - 🆓F20-trojan
+  - 🆓F21-ss
+  - 🆓F22-trojan
+  - 🆓F23-ss
+  - 🆓F24-trojan
+  - 🆓F25-trojan
+  - 🆓F26-ss
+  - 🆓F27-trojan
+  - 🆓F28-ss
+  - 🆓F29-trojan
+  - 🆓F30-ss
+  - 🆓F31-trojan
+  - 🆓F32-trojan
+  - 🆓F33-trojan
+  - 🆓F34-ss
+  - 🆓F35-ss
+  - 🆓F36-ss
+  - 🆓F37-ss
+  - 🆓F38-ss
+  - 🆓F39-trojan
+  - 🆓F40-trojan
+  - 🆓F41-ss
+  - 🆓F42-ss
+  - 🆓F43-trojan
+  - 🆓F44-ss
+  - 🆓F45-ss
+  - 🆓F46-ss
+  - 🆓F47-ss
+  - 🆓F48-ss
+  - 🆓F49-trojan
+  - 🆓F50-ss
+  - 🆓F51-ss
+  - 🆓F52-ss
+  - 🆓F53-trojan
+  - 🆓F54-ss
+  - 🆓F55-trojan
+  - 🆓F56-ss
+  - 🆓F57-ss
+  - 🆓F58-ss
+  - 🆓F59-ss
+  - 🆓F60-ss
+  - DIRECT
+- name: 🚀 自动选择
+  type: url-test
+  proxies: &id001
+  - 🆓F01-ss
+  - 🆓F02-ss
+  - 🆓F03-ss
+  - 🆓F04-ss
+  - 🆓F05-ss
+  - 🆓F06-ss
+  - 🆓F07-ss
+  - 🆓F08-ss
+  - 🆓F09-ss
+  - 🆓F10-ss
+  - 🆓F11-ss
+  - 🆓F12-ss
+  - 🆓F13-ss
+  - 🆓F14-ss
+  - 🆓F15-ss
+  - 🆓F16-ss
+  - 🆓F17-ss
+  - 🆓F18-trojan
+  - 🆓F19-trojan
+  - 🆓F20-trojan
+  - 🆓F21-ss
+  - 🆓F22-trojan
+  - 🆓F23-ss
+  - 🆓F24-trojan
+  - 🆓F25-trojan
+  - 🆓F26-ss
+  - 🆓F27-trojan
+  - 🆓F28-ss
+  - 🆓F29-trojan
+  - 🆓F30-ss
+  - 🆓F31-trojan
+  - 🆓F32-trojan
+  - 🆓F33-trojan
+  - 🆓F34-ss
+  - 🆓F35-ss
+  - 🆓F36-ss
+  - 🆓F37-ss
+  - 🆓F38-ss
+  - 🆓F39-trojan
+  - 🆓F40-trojan
+  - 🆓F41-ss
+  - 🆓F42-ss
+  - 🆓F43-trojan
+  - 🆓F44-ss
+  - 🆓F45-ss
+  - 🆓F46-ss
+  - 🆓F47-ss
+  - 🆓F48-ss
+  - 🆓F49-trojan
+  - 🆓F50-ss
+  - 🆓F51-ss
+  - 🆓F52-ss
+  - 🆓F53-trojan
+  - 🆓F54-ss
+  - 🆓F55-trojan
+  - 🆓F56-ss
+  - 🆓F57-ss
+  - 🆓F58-ss
+  - 🆓F59-ss
+  - 🆓F60-ss
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  timeout: 5000
+  lazy: true
+- name: 🚀 故障转移
+  type: fallback
+  proxies: *id001
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  timeout: 5000
+  lazy: true
+- name: 🆓 免费节点
+  type: url-test
+  proxies: *id001
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  timeout: 5000
+  lazy: true
+- name: Telegram
+  type: select
+  proxies:
+  - 节点选择
+  - 🚀 自动选择
+  - DIRECT
+- name: OpenAI
+  type: select
+  proxies:
+  - 节点选择
+  - 🚀 自动选择
+  - DIRECT
+- name: Claude
+  type: select
+  proxies:
+  - 节点选择
+  - 🚀 自动选择
+  - DIRECT
+- name: Gemini
+  type: select
+  proxies:
+  - 节点选择
+  - 🚀 自动选择
+  - DIRECT
+- name: YouTube
+  type: select
+  proxies:
+  - 节点选择
+  - 🚀 自动选择
+  - DIRECT
+- name: Netflix
+  type: select
+  proxies:
+  - 节点选择
+  - 🚀 自动选择
+  - DIRECT
+- name: Disney+
+  type: select
+  proxies:
+  - 节点选择
+  - 🚀 自动选择
+  - DIRECT
+- name: TikTok
+  type: select
+  proxies:
+  - 节点选择
+  - 🚀 自动选择
+  - DIRECT
+- name: Spotify
+  type: select
+  proxies:
+  - 节点选择
+  - 🚀 自动选择
+  - DIRECT
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - 🆓 免费节点
+  - DIRECT
+- name: 🛑 广告拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🍃 应用净化
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 节点选择
+  - 🚀 自动选择
+  - DIRECT
+rule-providers:
+  private:
+    type: http
+    behavior: domain
+    format: mrs
+    url: https://packages.bmb.news/capybara/rules/archive/privacy-20260908-v1/mihomo/private.mrs
+    path: ./ruleset/private.mrs
+    interval: 86400
+  private-ip:
+    type: http
+    behavior: ipcidr
+    format: mrs
+    url: https://packages.bmb.news/capybara/rules/archive/privacy-20260908-v1/mihomo/private-ip.mrs
+    path: ./ruleset/private-ip.mrs
+    interval: 86400
+  ads:
+    type: http
+    behavior: domain
+    format: mrs
+    url: https://packages.bmb.news/capybara/rules/archive/privacy-20260908-v1/mihomo/ads.mrs
+    path: ./ruleset/ads.mrs
+    interval: 86400
+  adguard-privacy:
+    type: http
+    behavior: domain
+    format: text
+    url: https://packages.bmb.news/capybara/rules/archive/privacy-20260908-v1/mihomo/adguard-privacy.list
+    path: ./ruleset/adguard-privacy.list
+    interval: 86400
+  openai:
+    type: http
+    behavior: domain
+    format: mrs
+    url: https://packages.bmb.news/capybara/rules/archive/privacy-20260908-v1/mihomo/openai.mrs
+    path: ./ruleset/openai.mrs
+    interval: 86400
+  anthropic:
+    type: http
+    behavior: domain
+    format: mrs
+    url: https://packages.bmb.news/capybara/rules/archive/privacy-20260908-v1/mihomo/anthropic.mrs
+    path: ./ruleset/anthropic.mrs
+    interval: 86400
+  gemini:
+    type: http
+    behavior: domain
+    format: mrs
+    url: https://packages.bmb.news/capybara/rules/archive/privacy-20260908-v1/mihomo/gemini.mrs
+    path: ./ruleset/gemini.mrs
+    interval: 86400
+  telegram:
+    type: http
+    behavior: domain
+    format: mrs
+    url: https://packages.bmb.news/capybara/rules/archive/privacy-20260908-v1/mihomo/telegram.mrs
+    path: ./ruleset/telegram.mrs
+    interval: 86400
+  telegram-ip:
+    type: http
+    behavior: ipcidr
+    format: mrs
+    url: https://packages.bmb.news/capybara/rules/archive/privacy-20260908-v1/mihomo/telegram-ip.mrs
+    path: ./ruleset/telegram-ip.mrs
+    interval: 86400
+  youtube:
+    type: http
+    behavior: domain
+    format: mrs
+    url: https://packages.bmb.news/capybara/rules/archive/privacy-20260908-v1/mihomo/youtube.mrs
+    path: ./ruleset/youtube.mrs
+    interval: 86400
+  netflix:
+    type: http
+    behavior: domain
+    format: mrs
+    url: https://packages.bmb.news/capybara/rules/archive/privacy-20260908-v1/mihomo/netflix.mrs
+    path: ./ruleset/netflix.mrs
+    interval: 86400
+  disney:
+    type: http
+    behavior: domain
+    format: mrs
+    url: https://packages.bmb.news/capybara/rules/archive/privacy-20260908-v1/mihomo/disney.mrs
+    path: ./ruleset/disney.mrs
+    interval: 86400
+  tiktok:
+    type: http
+    behavior: domain
+    format: mrs
+    url: https://packages.bmb.news/capybara/rules/archive/privacy-20260908-v1/mihomo/tiktok.mrs
+    path: ./ruleset/tiktok.mrs
+    interval: 86400
+  spotify:
+    type: http
+    behavior: domain
+    format: mrs
+    url: https://packages.bmb.news/capybara/rules/archive/privacy-20260908-v1/mihomo/spotify.mrs
+    path: ./ruleset/spotify.mrs
+    interval: 86400
+  cn:
+    type: http
+    behavior: domain
+    format: mrs
+    url: https://packages.bmb.news/capybara/rules/archive/privacy-20260908-v1/mihomo/cn.mrs
+    path: ./ruleset/cn.mrs
+    interval: 86400
+  cn-ip:
+    type: http
+    behavior: ipcidr
+    format: mrs
+    url: https://packages.bmb.news/capybara/rules/archive/privacy-20260908-v1/mihomo/cn-ip.mrs
+    path: ./ruleset/cn-ip.mrs
+    interval: 86400
+rules:
+- DOMAIN-SUFFIX,openai.com,OpenAI
+- DOMAIN-SUFFIX,api.openai.com,OpenAI
+- DOMAIN-SUFFIX,chatgpt.com,OpenAI
+- DOMAIN-SUFFIX,anthropic.com,Claude
+- DOMAIN-SUFFIX,claude.ai,Claude
+- DOMAIN-SUFFIX,googleapis.com,OpenAI
+- DOMAIN,panel.kapi-net.com,DIRECT
+- DOMAIN,packages.bmb.news,DIRECT
+- RULE-SET,private,DIRECT
+- RULE-SET,private-ip,DIRECT,no-resolve
+- RULE-SET,ads,REJECT
+- RULE-SET,adguard-privacy,REJECT
+- PROCESS-NAME,aria2c,REJECT
+- PROCESS-NAME,BitTorrent.exe,REJECT
+- PROCESS-NAME,deluge,REJECT
+- PROCESS-NAME,qbittorrent,REJECT
+- PROCESS-NAME,qbittorrent.exe,REJECT
+- PROCESS-NAME,transmission-daemon,REJECT
+- PROCESS-NAME,transmission-qt,REJECT
+- PROCESS-NAME,uTorrent.exe,REJECT
+- RULE-SET,openai,OpenAI
+- RULE-SET,anthropic,Claude
+- RULE-SET,gemini,Gemini
+- RULE-SET,telegram,Telegram
+- RULE-SET,telegram-ip,Telegram,no-resolve
+- RULE-SET,youtube,YouTube
+- RULE-SET,netflix,Netflix
+- RULE-SET,disney,Disney+
+- RULE-SET,tiktok,TikTok
+- RULE-SET,spotify,Spotify
+- RULE-SET,cn,DIRECT
+- RULE-SET,cn-ip,DIRECT,no-resolve
+- MATCH,节点选择
