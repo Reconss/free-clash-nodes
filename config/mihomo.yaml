@@ -34,6 +34,19 @@ dns:
   - +.msftconnecttest.com
   - +.msftncsi.com
 proxies:
+- type: vless
+  server: 92.243.74.224
+  port: 8443
+  uuid: a52fd54b-ba4d-4d11-8e00-301e2646cd66
+  tls: true
+  servername: de8.vpngold.ru
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1H1DiBCBB7fpALV71pH1q66ePybBFlVOcxftdlQimQ8
+    short-id: 385cb18df0892069
+  client-fingerprint: firefox
+  skip-cert-verify: false
+  name: 🆓F01-vless
 - client-fingerprint: chrome
   network: xhttp
   port: 61374
@@ -50,7 +63,124 @@ proxies:
     mode: packet-up
     path: /
     x-padding-bytes: 100-500
-  name: 🆓F01-vless
+  name: 🆓F02-vless
+- cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.72
+  type: ss
+  name: 🆓F03-ss
+- cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.90
+  type: ss
+  name: 🆓F04-ss
+- client-fingerprint: firefox
+  network: xhttp
+  port: 443
+  server: 84.32.184.218
+  servername: 7d1a74fd.ferrin.uk
+  tls: true
+  type: vless
+  uuid: 7d1a74fd-8a38-4a29-863f-5da53a9e557e
+  xhttp-opts:
+    mode: auto
+    path: /es
+  name: 🆓F05-vless
+- cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.45
+  type: ss
+  name: 🆓F06-ss
+- alpn:
+  - http/1.1
+  - h2
+  client-fingerprint: qq
+  network: tcp
+  port: 443
+  server: 87.242.119.253
+  servername: hvtlr-ru-47sb.fade.mom
+  tls: true
+  type: vless
+  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+  name: 🆓F07-vless
+- cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.63
+  type: ss
+  name: 🆓F08-ss
+- password: e4b72b531a2d10900519
+  port: 443
+  server: 82.196.9.7
+  sni: 52c40907.acsnet.co
+  tls: true
+  type: http
+  username: testuser1
+  name: 🆓F09-http
+- cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.27
+  type: ss
+  name: 🆓F10-ss
+- cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.36
+  type: ss
+  name: 🆓F11-ss
+- type: vless
+  server: 179.253.179.109
+  port: 30443
+  uuid: fdf48546-2736-429e-a0a2-f84cd85e8969
+  tls: true
+  servername: 194.124.211.14
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  name: 🆓F12-vless
+- port: 443
+  server: fan.571589.xyz
+  tls: true
+  type: http
+  name: 🆓F13-http
+- type: ss
+  server: 202.50.253.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 🆓F14-ss
+- type: socks5
+  server: 61.142.113.42
+  port: 6666
+  name: 🆓F15-socks5
+- cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.81
+  type: ss
+  name: 🆓F16-ss
+- type: ss
+  server: 202.50.253.54
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  name: 🆓F17-ss
+- client-fingerprint: randomized
+  flow: xtls-rprx-vision
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: cYtAkO6yUCuRTxHvF8EH76bybk1yfS005KLls-at2yc
+    short-id: a7856800c2deb7b2
+  server: app-mi-26.spbstudentlife.com
+  servername: assets-mi-26.spbstudentlife.com
+  tls: true
+  type: vless
+  uuid: 07680ffb-0666-4836-b6ad-ec0de62bc38f
+  name: 🆓F18-vless
 - type: vless
   server: 206.1.97.108
   port: 25021
@@ -63,268 +193,88 @@ proxies:
     short-id: 17fa3af0924c88b3
   client-fingerprint: firefox
   skip-cert-verify: false
-  name: 🆓F02-vless
-- type: trojan
-  server: 176.114.95.242
-  port: 443
-  uuid: UAKWGor-h0woFsxKSWK92HptcM0g2k2h
-  password: UAKWGor-h0woFsxKSWK92HptcM0g2k2h
-  skip-cert-verify: false
-  sni: lt-1.1984.love
-  name: 🆓F03-trojan
-- type: vless
-  server: 5.129.249.65
-  port: 443
-  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
-  tls: true
-  servername: rue.tems.bet
+  name: 🆓F19-vless
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  network: tcp
+  port: 47443
   reality-opts:
-    public-key: iT-HgkPRUHl7Tm-LUWAGD-zoNoZSkVc-M9sscIIomHY
-    short-id: a62228a1c8b3378f
-  client-fingerprint: firefox
-  skip-cert-verify: false
-  name: 🆓F04-vless
-- port: 443
-  server: fan.571589.xyz
+    public-key: z1GSwCEACvO9RLcMVpcURiT8er4oeIdeSJhraw_0cGU
+    short-id: ae97223a8f799877
+  server: 95.56.251.12
+  servername: kz1.waspnest.space
   tls: true
-  type: http
-  name: 🆓F05-http
-- type: trojan
-  server: 104.17.17.238
-  port: 443
-  uuid: humanity
-  password: humanity
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers: {}
-  skip-cert-verify: false
-  sni: www.cordweave.com
-  name: 🆓F06-trojan
+  type: vless
+  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+  name: 🆓F20-vless
 - type: vless
-  server: 5.253.28.240
-  port: 2443
-  uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
+  server: 179.253.179.109
+  port: 54083
+  uuid: 0ef03752-c8bf-4482-8710-e563ca4808f9
   tls: true
-  servername: deepl.com
-  reality-opts:
-    public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
-    short-id: 92c32de179e5d908
+  servername: 177.3.215.54
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: rex-eb0bf76b710ce763
   skip-cert-verify: false
-  name: 🆓F07-vless
-- cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 202.50.253.90
-  type: ss
-  name: 🆓F08-ss
-- type: trojan
-  server: 104.18.72.213
-  port: 443
-  uuid: humanity
-  password: humanity
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers: {}
-  skip-cert-verify: false
-  sni: www.cordweave.com
-  name: 🆓F09-trojan
-- cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 202.50.253.99
-  type: ss
-  name: 🆓F10-ss
-- password: e4b72b531a2d10900519
-  port: 443
-  server: 82.196.9.7
-  sni: 52c40907.acsnet.co
-  tls: true
-  type: http
-  username: testuser1
-  name: 🆓F11-http
-- password: 'null'
-  port: 443
-  server: 103.97.88.154
+  name: 🆓F21-vless
+- password: None
+  port: 9443
+  server: 185.245.84.50
   skip-cert-verify: true
   tls: true
   type: http
-  username: 'null'
-  name: 🆓F12-http
+  name: 🆓F22-http
+- password: None
+  port: 9443
+  server: 95.153.31.66
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 🆓F23-http
 - port: 443
   server: 34.249.214.108
   skip-cert-verify: true
   tls: true
   type: http
-  name: 🆓F13-http
-- port: 8443
-  server: 44.229.69.166
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 🆓F14-http
-- type: http
-  server: 138.199.35.212
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-  name: 🆓F15-http
-- password: 'null'
-  port: 443
-  server: fan.973511.xyz
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-  name: 🆓F16-http
+  name: 🆓F24-http
 - port: 443
   server: 172.64.68.89
   skip-cert-verify: true
   tls: true
   type: http
-  name: 🆓F17-http
-- password: None
-  port: 9002
-  server: 84.17.47.149
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 🆓F18-http
-- type: http
-  server: 103.86.117.202
-  port: 443
-  tls: true
-  skip-cert-verify: true
-  name: 🆓F19-http
+  name: 🆓F25-http
 - port: 443
-  server: 82.65.162.76
+  server: 185.216.35.66
   skip-cert-verify: true
   tls: true
   type: http
-  name: 🆓F20-http
+  name: 🆓F26-http
+- port: 8090
+  server: 80.124.109.22
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 🆓F27-http
+- password: None
+  port: 443
+  server: 146.70.221.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 🆓F28-http
 - password: None
   port: 9002
   server: 84.17.47.123
   skip-cert-verify: true
   tls: true
   type: http
-  name: 🆓F21-http
-- password: None
-  port: 9002
-  server: 158.173.154.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 🆓F22-http
-- password: None
-  port: 9002
-  server: 84.17.47.126
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 🆓F23-http
-- port: 8090
-  server: 80.124.109.22
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 🆓F24-http
-- port: 9002
-  server: 84.17.47.124
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 🆓F25-http
-- port: 443
-  server: 38.247.141.135
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 🆓F26-http
-- password: None
-  port: 9002
-  server: 158.173.154.3
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 🆓F27-http
-- network: ws
-  password: humanity
-  port: 443
-  server: 162.159.150.241
-  servername: www.cordweave.com
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  tls: true
-  type: trojan
-  ws-opts:
-    path: /assignment
-  name: 🆓F28-trojan
-- port: 9002
-  server: 158.173.154.1
-  skip-cert-verify: true
-  tls: true
-  type: http
   name: 🆓F29-http
-- type: http
-  server: 109.116.41.154
-  port: 443
-  tls: true
-  skip-cert-verify: true
-  name: 🆓F30-http
 - password: None
-  port: 443
-  server: 185.238.170.10
+  port: 9443
+  server: 37.120.213.210
   skip-cert-verify: true
   tls: true
   type: http
-  name: 🆓F31-http
-- port: 8090
-  server: 24.142.229.178
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 🆓F32-http
-- port: 443
-  server: 213.109.163.119
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 🆓F33-http
-- password: 'null'
-  port: 9002
-  server: 84.17.47.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-  name: 🆓F34-http
-- type: http
-  server: fan.587475.xyz
-  port: 443
-  tls: true
-  sni: fan.587475.xyz
-  skip-cert-verify: true
-  name: 🆓F35-http
-- network: ws
-  password: humanity
-  port: 443
-  server: 104.16.144.215
-  servername: www.cordweave.com
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  tls: true
-  type: trojan
-  ws-opts:
-    path: /assignment
-  name: 🆓F36-trojan
+  name: 🆓F30-http
 - password: 'null'
   port: 8443
   server: 44.248.167.117
@@ -332,104 +282,180 @@ proxies:
   tls: true
   type: http
   username: 'null'
-  name: 🆓F37-http
-- password: None
-  port: 9002
-  server: 84.17.47.148
+  name: 🆓F31-http
+- port: 9443
+  server: 31.171.155.210
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  name: 🆓F32-http
+- type: http
+  server: 103.86.117.202
+  port: 443
+  tls: true
+  skip-cert-verify: true
+  name: 🆓F33-http
+- port: 8443
+  server: 44.229.69.166
   skip-cert-verify: true
   tls: true
   type: http
-  name: 🆓F38-http
+  name: 🆓F34-http
 - password: None
   port: 9002
   server: 158.173.154.4
   skip-cert-verify: true
   tls: true
   type: http
-  name: 🆓F39-http
-- network: ws
-  password: humanity
-  port: 443
-  server: 152.70.86.199
-  servername: www.cordweave.com
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  tls: true
-  type: trojan
-  ws-opts:
-    path: /assignment
-  name: 🆓F40-trojan
-- network: ws
-  password: humanity
-  port: 443
-  server: 104.16.65.1
-  servername: www.cordweave.com
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  tls: true
-  type: trojan
-  ws-opts:
-    path: /assignment
-  name: 🆓F41-trojan
+  name: 🆓F35-http
 - password: 'null'
   port: 9002
-  server: 84.17.47.147
+  server: 84.17.47.146
   skip-cert-verify: true
-  sni: 84.17.47.147
   tls: true
   type: http
   username: 'null'
+  name: 🆓F36-http
+- password: None
+  port: 9002
+  server: 84.17.47.148
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 🆓F37-http
+- port: 8090
+  server: 83.206.1.225
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 🆓F38-http
+- port: 9443
+  server: 149.88.27.46
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 🆓F39-http
+- type: http
+  server: 138.199.35.212
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+  name: 🆓F40-http
+- password: None
+  port: 9443
+  server: 79.127.156.177
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 🆓F41-http
+- password: None
+  port: 443
+  server: 212.102.63.1
+  skip-cert-verify: true
+  tls: true
+  type: http
   name: 🆓F42-http
-- network: ws
-  password: humanity
-  port: 443
-  server: 35.78.243.103
-  servername: www.cordweave.com
+- password: None
+  port: 9443
+  server: 84.17.50.214
   skip-cert-verify: true
-  sni: www.cordweave.com
   tls: true
-  type: trojan
-  ws-opts:
-    path: /assignment
-  name: 🆓F43-trojan
-- network: ws
-  password: humanity
-  port: 443
-  server: 129.225.185.49
-  servername: www.cordweave.com
+  type: http
+  name: 🆓F43-http
+- password: None
+  port: 9002
+  server: 158.173.154.2
   skip-cert-verify: true
-  sni: www.cordweave.com
   tls: true
-  type: trojan
-  ws-opts:
-    path: /assignment
-  name: 🆓F44-trojan
+  type: http
+  name: 🆓F44-http
 - port: 9002
-  server: 84.17.47.125
+  server: 158.173.154.5
   skip-cert-verify: true
   tls: true
   type: http
   name: 🆓F45-http
-- port: 443
-  server: 51.158.243.91
+- password: None
+  port: 443
+  server: 212.102.63.61
   skip-cert-verify: true
   tls: true
   type: http
   name: 🆓F46-http
-- password: 'null'
-  port: 23856
-  server: 51.159.225.196
+- password: None
+  port: 443
+  server: 146.70.244.18
   skip-cert-verify: true
   tls: true
   type: http
-  username: 'null'
   name: 🆓F47-http
 - port: 443
-  server: 23.133.176.14
+  server: 185.219.159.15
   skip-cert-verify: true
   tls: true
   type: http
   name: 🆓F48-http
+- password: None
+  port: 9002
+  server: 84.17.47.126
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 🆓F49-http
+- port: 9443
+  server: 31.171.154.66
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 🆓F50-http
+- port: 9002
+  server: 84.17.47.124
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 🆓F51-http
+- type: http
+  server: fan.587475.xyz
+  port: 443
+  tls: true
+  sni: fan.587475.xyz
+  skip-cert-verify: true
+  name: 🆓F52-http
+- password: None
+  port: 9002
+  server: 84.17.47.149
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 🆓F53-http
+- port: 443
+  server: 82.65.162.76
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 🆓F54-http
+- password: None
+  port: 443
+  server: 84.17.50.193
+  skip-cert-verify: true
+  tls: true
+  type: http
+  name: 🆓F55-http
+- type: http
+  server: 213.207.130.34
+  port: 443
+  tls: true
+  skip-cert-verify: true
+  name: 🆓F56-http
+- type: http
+  server: 109.116.41.154
+  port: 443
+  tls: true
+  skip-cert-verify: true
+  name: 🆓F57-http
 - type: http
   server: 138.199.35.213
   port: 9002
@@ -437,115 +463,16 @@ proxies:
   password: 'null'
   tls: true
   skip-cert-verify: true
-  name: 🆓F49-http
-- network: ws
-  password: humanity
-  port: 443
-  server: 162.159.149.157
-  servername: www.cordweave.com
-  skip-cert-verify: true
-  sni: www.cordweave.com
+  name: 🆓F58-http
+- type: http
+  server: 193.176.84.24
+  port: 9002
   tls: true
-  type: trojan
-  ws-opts:
-    path: /assignment
-  name: 🆓F50-trojan
-- password: 'null'
-  port: 443
-  server: 185.238.168.20
+  sni: www.bing.com
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-  name: 🆓F51-http
-- password: None
-  port: 8090
-  server: 82.96.128.175
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 🆓F52-http
-- network: ws
-  password: humanity
-  port: 443
-  server: 172.64.153.224
-  servername: www.cordweave.com
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  tls: true
-  type: trojan
-  ws-opts:
-    path: /assignment
-  name: 🆓F53-trojan
+  name: 🆓F59-http
 - port: 443
-  server: 185.219.159.15
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 🆓F54-http
-- network: ws
-  password: humanity
-  port: 443
-  server: 104.16.244.188
-  servername: www.cordweave.com
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  tls: true
-  type: trojan
-  ws-opts:
-    path: /assignment
-  name: 🆓F55-trojan
-- network: ws
-  password: humanity
-  port: 443
-  server: 202.61.198.53
-  servername: www.cordweave.com
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  tls: true
-  type: trojan
-  ws-opts:
-    path: /assignment
-  name: 🆓F56-trojan
-- network: ws
-  password: humanity
-  port: 443
-  server: 104.17.221.194
-  servername: www.cordweave.com
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  tls: true
-  type: trojan
-  ws-opts:
-    path: /assignment
-  name: 🆓F57-trojan
-- network: ws
-  password: humanity
-  port: 443
-  server: 213.165.34.40
-  servername: www.cordweave.com
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  tls: true
-  type: trojan
-  ws-opts:
-    path: /assignment
-  name: 🆓F58-trojan
-- network: ws
-  password: humanity
-  port: 443
-  server: 172.64.229.7
-  servername: www.cordweave.com
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  tls: true
-  type: trojan
-  ws-opts:
-    path: /assignment
-  name: 🆓F59-trojan
-- password: None
-  port: 443
-  server: 162.244.227.36
+  server: 23.133.176.14
   skip-cert-verify: true
   tls: true
   type: http
@@ -560,32 +487,32 @@ proxy-groups:
   - 🚀 手动切换
   - 🆓F01-vless
   - 🆓F02-vless
-  - 🆓F03-trojan
-  - 🆓F04-vless
-  - 🆓F05-http
-  - 🆓F06-trojan
+  - 🆓F03-ss
+  - 🆓F04-ss
+  - 🆓F05-vless
+  - 🆓F06-ss
   - 🆓F07-vless
   - 🆓F08-ss
-  - 🆓F09-trojan
+  - 🆓F09-http
   - 🆓F10-ss
-  - 🆓F11-http
-  - 🆓F12-http
+  - 🆓F11-ss
+  - 🆓F12-vless
   - 🆓F13-http
-  - 🆓F14-http
-  - 🆓F15-http
-  - 🆓F16-http
-  - 🆓F17-http
-  - 🆓F18-http
-  - 🆓F19-http
-  - 🆓F20-http
-  - 🆓F21-http
+  - 🆓F14-ss
+  - 🆓F15-socks5
+  - 🆓F16-ss
+  - 🆓F17-ss
+  - 🆓F18-vless
+  - 🆓F19-vless
+  - 🆓F20-vless
+  - 🆓F21-vless
   - 🆓F22-http
   - 🆓F23-http
   - 🆓F24-http
   - 🆓F25-http
   - 🆓F26-http
   - 🆓F27-http
-  - 🆓F28-trojan
+  - 🆓F28-http
   - 🆓F29-http
   - 🆓F30-http
   - 🆓F31-http
@@ -593,30 +520,30 @@ proxy-groups:
   - 🆓F33-http
   - 🆓F34-http
   - 🆓F35-http
-  - 🆓F36-trojan
+  - 🆓F36-http
   - 🆓F37-http
   - 🆓F38-http
   - 🆓F39-http
-  - 🆓F40-trojan
-  - 🆓F41-trojan
+  - 🆓F40-http
+  - 🆓F41-http
   - 🆓F42-http
-  - 🆓F43-trojan
-  - 🆓F44-trojan
+  - 🆓F43-http
+  - 🆓F44-http
   - 🆓F45-http
   - 🆓F46-http
   - 🆓F47-http
   - 🆓F48-http
   - 🆓F49-http
-  - 🆓F50-trojan
+  - 🆓F50-http
   - 🆓F51-http
   - 🆓F52-http
-  - 🆓F53-trojan
+  - 🆓F53-http
   - 🆓F54-http
-  - 🆓F55-trojan
-  - 🆓F56-trojan
-  - 🆓F57-trojan
-  - 🆓F58-trojan
-  - 🆓F59-trojan
+  - 🆓F55-http
+  - 🆓F56-http
+  - 🆓F57-http
+  - 🆓F58-http
+  - 🆓F59-http
   - 🆓F60-http
   - DIRECT
 - name: 🚀 手动切换
@@ -624,32 +551,32 @@ proxy-groups:
   proxies:
   - 🆓F01-vless
   - 🆓F02-vless
-  - 🆓F03-trojan
-  - 🆓F04-vless
-  - 🆓F05-http
-  - 🆓F06-trojan
+  - 🆓F03-ss
+  - 🆓F04-ss
+  - 🆓F05-vless
+  - 🆓F06-ss
   - 🆓F07-vless
   - 🆓F08-ss
-  - 🆓F09-trojan
+  - 🆓F09-http
   - 🆓F10-ss
-  - 🆓F11-http
-  - 🆓F12-http
+  - 🆓F11-ss
+  - 🆓F12-vless
   - 🆓F13-http
-  - 🆓F14-http
-  - 🆓F15-http
-  - 🆓F16-http
-  - 🆓F17-http
-  - 🆓F18-http
-  - 🆓F19-http
-  - 🆓F20-http
-  - 🆓F21-http
+  - 🆓F14-ss
+  - 🆓F15-socks5
+  - 🆓F16-ss
+  - 🆓F17-ss
+  - 🆓F18-vless
+  - 🆓F19-vless
+  - 🆓F20-vless
+  - 🆓F21-vless
   - 🆓F22-http
   - 🆓F23-http
   - 🆓F24-http
   - 🆓F25-http
   - 🆓F26-http
   - 🆓F27-http
-  - 🆓F28-trojan
+  - 🆓F28-http
   - 🆓F29-http
   - 🆓F30-http
   - 🆓F31-http
@@ -657,30 +584,30 @@ proxy-groups:
   - 🆓F33-http
   - 🆓F34-http
   - 🆓F35-http
-  - 🆓F36-trojan
+  - 🆓F36-http
   - 🆓F37-http
   - 🆓F38-http
   - 🆓F39-http
-  - 🆓F40-trojan
-  - 🆓F41-trojan
+  - 🆓F40-http
+  - 🆓F41-http
   - 🆓F42-http
-  - 🆓F43-trojan
-  - 🆓F44-trojan
+  - 🆓F43-http
+  - 🆓F44-http
   - 🆓F45-http
   - 🆓F46-http
   - 🆓F47-http
   - 🆓F48-http
   - 🆓F49-http
-  - 🆓F50-trojan
+  - 🆓F50-http
   - 🆓F51-http
   - 🆓F52-http
-  - 🆓F53-trojan
+  - 🆓F53-http
   - 🆓F54-http
-  - 🆓F55-trojan
-  - 🆓F56-trojan
-  - 🆓F57-trojan
-  - 🆓F58-trojan
-  - 🆓F59-trojan
+  - 🆓F55-http
+  - 🆓F56-http
+  - 🆓F57-http
+  - 🆓F58-http
+  - 🆓F59-http
   - 🆓F60-http
   - DIRECT
 - name: 🚀 自动选择
@@ -688,32 +615,32 @@ proxy-groups:
   proxies: &id001
   - 🆓F01-vless
   - 🆓F02-vless
-  - 🆓F03-trojan
-  - 🆓F04-vless
-  - 🆓F05-http
-  - 🆓F06-trojan
+  - 🆓F03-ss
+  - 🆓F04-ss
+  - 🆓F05-vless
+  - 🆓F06-ss
   - 🆓F07-vless
   - 🆓F08-ss
-  - 🆓F09-trojan
+  - 🆓F09-http
   - 🆓F10-ss
-  - 🆓F11-http
-  - 🆓F12-http
+  - 🆓F11-ss
+  - 🆓F12-vless
   - 🆓F13-http
-  - 🆓F14-http
-  - 🆓F15-http
-  - 🆓F16-http
-  - 🆓F17-http
-  - 🆓F18-http
-  - 🆓F19-http
-  - 🆓F20-http
-  - 🆓F21-http
+  - 🆓F14-ss
+  - 🆓F15-socks5
+  - 🆓F16-ss
+  - 🆓F17-ss
+  - 🆓F18-vless
+  - 🆓F19-vless
+  - 🆓F20-vless
+  - 🆓F21-vless
   - 🆓F22-http
   - 🆓F23-http
   - 🆓F24-http
   - 🆓F25-http
   - 🆓F26-http
   - 🆓F27-http
-  - 🆓F28-trojan
+  - 🆓F28-http
   - 🆓F29-http
   - 🆓F30-http
   - 🆓F31-http
@@ -721,30 +648,30 @@ proxy-groups:
   - 🆓F33-http
   - 🆓F34-http
   - 🆓F35-http
-  - 🆓F36-trojan
+  - 🆓F36-http
   - 🆓F37-http
   - 🆓F38-http
   - 🆓F39-http
-  - 🆓F40-trojan
-  - 🆓F41-trojan
+  - 🆓F40-http
+  - 🆓F41-http
   - 🆓F42-http
-  - 🆓F43-trojan
-  - 🆓F44-trojan
+  - 🆓F43-http
+  - 🆓F44-http
   - 🆓F45-http
   - 🆓F46-http
   - 🆓F47-http
   - 🆓F48-http
   - 🆓F49-http
-  - 🆓F50-trojan
+  - 🆓F50-http
   - 🆓F51-http
   - 🆓F52-http
-  - 🆓F53-trojan
+  - 🆓F53-http
   - 🆓F54-http
-  - 🆓F55-trojan
-  - 🆓F56-trojan
-  - 🆓F57-trojan
-  - 🆓F58-trojan
-  - 🆓F59-trojan
+  - 🆓F55-http
+  - 🆓F56-http
+  - 🆓F57-http
+  - 🆓F58-http
+  - 🆓F59-http
   - 🆓F60-http
   url: https://www.gstatic.com/generate_204
   interval: 300
