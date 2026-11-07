@@ -34,72 +34,74 @@ dns:
   - +.msftconnecttest.com
   - +.msftncsi.com
 proxies:
-- type: http
-  server: fan.587475.xyz
+- type: socks5
+  server: 61.142.113.42
+  port: 6666
+  name: 🆓F01-socks5
+- password: e4b72b531a2d10900519
   port: 443
+  server: 82.196.9.7
+  sni: 52c40907.acsnet.co
   tls: true
-  sni: fan.587475.xyz
+  type: http
+  username: testuser1
+  name: 🆓F02-http
+- password: 'null'
+  port: 9002
+  server: 84.17.47.147
   skip-cert-verify: true
-  name: 🆓F01-http
-- port: 443
-  server: 12.202.180.118
+  sni: 84.17.47.147
+  tls: true
+  type: http
+  username: 'null'
+  name: 🆓F03-http
+- type: http
+  server: 138.199.35.213
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+  name: 🆓F04-http
+- port: 9002
+  server: 84.17.47.125
   skip-cert-verify: true
   tls: true
   type: http
-  name: 🆓F02-http
+  name: 🆓F05-http
 - type: http
   server: 103.86.117.202
   port: 443
   tls: true
   skip-cert-verify: true
-  name: 🆓F03-http
-- type: http
-  server: 159.13.44.228
-  port: 443
-  username: 'null'
-  password: None
-  tls: true
-  skip-cert-verify: true
-  name: 🆓F04-http
-- port: 443
-  server: 23.133.176.14
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 🆓F05-http
-- port: 443
-  server: 34.249.214.108
-  skip-cert-verify: true
-  tls: true
-  type: http
   name: 🆓F06-http
-- password: 'null'
-  port: 443
-  server: 103.97.88.154
+- password: None
+  port: 9002
+  server: 84.17.47.126
   skip-cert-verify: true
   tls: true
   type: http
-  username: 'null'
   name: 🆓F07-http
-- port: 443
-  server: 82.65.162.76
-  skip-cert-verify: true
+- type: http
+  server: 109.116.41.154
+  port: 443
   tls: true
-  type: http
+  skip-cert-verify: true
   name: 🆓F08-http
 - type: http
-  server: 12.221.146.147
-  port: 443
+  server: 138.199.35.212
+  port: 9002
+  username: 'null'
+  password: 'null'
   tls: true
   skip-cert-verify: true
   name: 🆓F09-http
-- password: 'null'
-  port: 443
-  server: fan.973511.xyz
+- password: None
+  port: 9002
+  server: 158.173.154.4
   skip-cert-verify: true
   tls: true
   type: http
-  username: 'null'
   name: 🆓F10-http
 proxy-groups:
 - name: 节点选择
@@ -109,7 +111,7 @@ proxy-groups:
   - 🚀 自动选择
   - 🚀 故障转移
   - 🚀 手动切换
-  - 🆓F01-http
+  - 🆓F01-socks5
   - 🆓F02-http
   - 🆓F03-http
   - 🆓F04-http
@@ -123,7 +125,7 @@ proxy-groups:
 - name: 🚀 手动切换
   type: select
   proxies:
-  - 🆓F01-http
+  - 🆓F01-socks5
   - 🆓F02-http
   - 🆓F03-http
   - 🆓F04-http
@@ -137,7 +139,7 @@ proxy-groups:
 - name: 🚀 自动选择
   type: url-test
   proxies: &id001
-  - 🆓F01-http
+  - 🆓F01-socks5
   - 🆓F02-http
   - 🆓F03-http
   - 🆓F04-http
