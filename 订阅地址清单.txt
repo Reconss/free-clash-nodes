@@ -10,11 +10,11 @@ https://sub.shadowsharing.com/sub
 
 ## VPN-Subcription-Links/ClashX-V2Ray-TopFreeProxy
 https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml
-https://raw.githubusercontent.com/VPN-Subcription-Links/ClashX-V2Ray-TopFreeProxy/main/combine/clash.config.yaml
-https://www.xrayvip.com/free.yaml
-https://raw.githubusercontent.com/mfuu/FreeProxies/master/sub.yaml
 https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
 https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/1225clash.yml
+https://raw.githubusercontent.com/VPN-Subcription-Links/ClashX-V2Ray-TopFreeProxy/main/combine/clash.config.yaml
+https://raw.githubusercontent.com/mfuu/FreeProxies/master/sub.yaml
+https://www.xrayvip.com/free.yaml
 https://freenode.openrunner.net/uploads/20240617-clash.yaml
 https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml
 https://free.datiya.com/uploads/20261010-clash.yaml
@@ -39,6 +39,8 @@ https://free.datiya.com/uploads/20261028-clash.yaml
 https://free.datiya.com/uploads/20261029-clash.yaml
 https://free.datiya.com/uploads/20261030-clash.yaml
 https://free.datiya.com/uploads/20261031-clash.yaml
+https://free.datiya.com/uploads/20261101-clash.yaml
+https://free.datiya.com/uploads/20261102-clash.yaml
 https://raw.githubusercontent.com/free18/v2ray/main/c.yaml
 https://raw.githubusercontent.com/firefoxmmx2/v2rayshare_subcription/main/subscription/clash_sub.yaml
 https://raw.githubusercontent.com/VPN-Subcription-Links/ClashX-V2Ray-TopFreeProxy/main/combine/clash.config.template.yaml
@@ -62,35 +64,33 @@ https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-c
 https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-GB.yaml
 
 ## 0xRadikal/Free-v2ray-Configs
-https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/all/configs_base64.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/all/configs.txt
+https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/all/configs_base64.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/all/clash.yaml
-https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/heavy/configs_base64.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/heavy/configs.txt
+https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/heavy/configs_base64.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/heavy/clash.yaml
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/light/clash.yaml
-https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/light/configs_base64.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/light/configs.txt
+https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/light/configs_base64.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/vless_base64.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/vmess.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/vmess_base64.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/trojan.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/trojan_base64.txt
-https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/verified/configs.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/verified/clash.yaml
+https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/verified/configs.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/shadowsocks.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/shadowsocks_base64.txt
-https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/secure/clash.yaml
-https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/secure/configs.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/fast/clash.yaml
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/fast/configs.txt
+https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/secure/clash.yaml
+https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/secure/configs.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/hysteria2.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/hysteria2_base64.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/top100.txt
 https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/health.json
-https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/socks.txt
-https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/socks_base64.txt
 
 ## xiaoji235/airport-free
 https://raw.githubusercontent.com/xiaoji235/airport-free/main/v2ray.txt
@@ -98,15 +98,14 @@ https://cdn.jsdelivr.net/gh/xiaoji235/airport-free/v2ray.txt
 https://raw.githubusercontent.com/xiaoji235/airport-free/main/v2ray/clashnodecc.txt
 https://cdn.jsdelivr.net/gh/xiaoji235/airport-free/v2ray/clashnodecc.txt
 https://raw.githubusercontent.com/xiaoji235/airport-free/main/clash/clashnodecc.txt
-https://cdn.jsdelivr.net/gh/xiaoji235/airport-free/clash/clashnodecc.txt
 https://raw.githubusercontent.com/xiaoji235/airport-free/main/clash/v2rayshare.txt
 https://cdn.jsdelivr.net/gh/xiaoji235/airport-free/clash/v2rayshare.txt
 https://raw.githubusercontent.com/xiaoji235/airport-free/main/v2ray/v2rayshare.txt
 https://cdn.jsdelivr.net/gh/xiaoji235/airport-free/v2ray/v2rayshare.txt
 
 ## sunmiao4458/free-proxy-airport
-https://sunmiao4458.github.io/free-proxy-airport/clash.yaml
 https://raw.githubusercontent.com/sunmiao4458/free-proxy-airport/main/docs/clash.yaml
+https://sunmiao4458.github.io/free-proxy-airport/clash.yaml
 https://raw.githubusercontent.com/sunmiao4458/free-proxy-airport/main/output/clash.yaml
 
 ## zhuhaiuk/free-nodes
@@ -118,35 +117,41 @@ https://raw.githubusercontent.com/SnapdragonLee/SystemProxy/master/dist/clash_co
 https://raw.githubusercontent.com/SnapdragonLee/SystemProxy/master/clash.config.template.yaml
 https://raw.githubusercontent.com/SnapdragonLee/SystemProxy/master/dist/clash_config.yaml
 
+## free-nodes/v2rayfree
+https://raw.githubusercontent.com/free-nodes/v2rayfree/main/sub
+
 ## chengaopan/AutoMergePublicNodes
+https://testingcf.jsdelivr.net/gh/chengaopan/AutoMergePublicNodes@master/list.txt
 https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/list.txt
 https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/list_raw.txt
 https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.txt
 https://cdn.jsdelivr.net/gh/chengaopan/AutoMergePublicNodes@master/list.txt
 https://fastly.jsdelivr.net/gh/chengaopan/AutoMergePublicNodes@master/list.txt
-https://testingcf.jsdelivr.net/gh/chengaopan/AutoMergePublicNodes@master/list.txt
 https://gcore.jsdelivr.net/gh/chengaopan/AutoMergePublicNodes@master/list.txt
 https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/list.meta.yml
 https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes.meta.yml
 https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/list.yml
 https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes.yml
-https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_FR.meta.yml
-https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/config.yml
 https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_DE.meta.yml
-https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_FR.yml
+https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/config.yml
+https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_FR.meta.yml
+https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_DE.yml
+https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_CA.meta.yml
+https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_CA.yml
+https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_GB.meta.yml
+https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_EE.meta.yml
 https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_JP.meta.yml
 https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_HK.meta.yml
-https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_HK.yml
-https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_CA.meta.yml
-https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_GB.meta.yml
-https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_DE.yml
-https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_CA.yml
-https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_GB.yml
+https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_CH.meta.yml
+https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/main/snippets/nodes_CH.yml
 
 ## awesome-vpn/awesome-vpn
-https://cdn.jsdelivr.net/gh/awesome-vpn/awesome-vpn@master/clash.yaml
 https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/clash.yaml
 https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all
+https://cdn.jsdelivr.net/gh/awesome-vpn/awesome-vpn@master/clash.yaml
+
+## free18/v2ray
+https://ghfast.top/https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml
 
 ## ermaozi/get_subscribe
 https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt
