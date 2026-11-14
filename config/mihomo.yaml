@@ -34,75 +34,20 @@ dns:
   - +.msftconnecttest.com
   - +.msftncsi.com
 proxies:
-- type: socks5
-  server: 61.142.113.42
-  port: 6666
-  name: 🆓F01-socks5
-- password: e4b72b531a2d10900519
-  port: 443
-  server: 82.196.9.7
-  sni: 52c40907.acsnet.co
+- type: vmess
+  server: 172.67.161.144
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
   tls: true
-  type: http
-  username: testuser1
-  name: 🆓F02-http
-- password: 'null'
-  port: 9002
-  server: 84.17.47.147
-  skip-cert-verify: true
-  sni: 84.17.47.147
-  tls: true
-  type: http
-  username: 'null'
-  name: 🆓F03-http
-- type: http
-  server: 138.199.35.213
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-  name: 🆓F04-http
-- port: 9002
-  server: 84.17.47.125
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 🆓F05-http
-- type: http
-  server: 103.86.117.202
-  port: 443
-  tls: true
-  skip-cert-verify: true
-  name: 🆓F06-http
-- password: None
-  port: 9002
-  server: 84.17.47.126
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 🆓F07-http
-- type: http
-  server: 109.116.41.154
-  port: 443
-  tls: true
-  skip-cert-verify: true
-  name: 🆓F08-http
-- type: http
-  server: 138.199.35.212
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-  name: 🆓F09-http
-- password: None
-  port: 9002
-  server: 158.173.154.4
-  skip-cert-verify: true
-  tls: true
-  type: http
-  name: 🆓F10-http
+  servername: v2ray1.dozapp.xyz
+  name: 🆓F01-vmess
 proxy-groups:
 - name: 节点选择
   type: select
@@ -111,44 +56,17 @@ proxy-groups:
   - 🚀 自动选择
   - 🚀 故障转移
   - 🚀 手动切换
-  - 🆓F01-socks5
-  - 🆓F02-http
-  - 🆓F03-http
-  - 🆓F04-http
-  - 🆓F05-http
-  - 🆓F06-http
-  - 🆓F07-http
-  - 🆓F08-http
-  - 🆓F09-http
-  - 🆓F10-http
+  - 🆓F01-vmess
   - DIRECT
 - name: 🚀 手动切换
   type: select
   proxies:
-  - 🆓F01-socks5
-  - 🆓F02-http
-  - 🆓F03-http
-  - 🆓F04-http
-  - 🆓F05-http
-  - 🆓F06-http
-  - 🆓F07-http
-  - 🆓F08-http
-  - 🆓F09-http
-  - 🆓F10-http
+  - 🆓F01-vmess
   - DIRECT
 - name: 🚀 自动选择
   type: url-test
   proxies: &id001
-  - 🆓F01-socks5
-  - 🆓F02-http
-  - 🆓F03-http
-  - 🆓F04-http
-  - 🆓F05-http
-  - 🆓F06-http
-  - 🆓F07-http
-  - 🆓F08-http
-  - 🆓F09-http
-  - 🆓F10-http
+  - 🆓F01-vmess
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
