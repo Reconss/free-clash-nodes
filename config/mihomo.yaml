@@ -35,119 +35,6 @@ dns:
   - +.msftncsi.com
 proxies:
 - type: vmess
-  server: 172.67.171.43
-  port: 80
-  uuid: b79a6959-6feb-43ba-b3c7-f1afae9ea32c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Uk2.vmess.site.
-  name: 🆓F01-vmess
-- type: vmess
-  server: 172.66.44.97
-  port: 8080
-  uuid: 4b9cee18-8a9c-45f2-be2b-8e585783c4b5
-  alterId: 0
-  cipher: auto
-  network: tcp
-  name: 🆓F02-vmess
-- type: vmess
-  server: 172.67.1.143
-  port: 443
-  uuid: 251780c1-1501-43b3-be2a-d144a20d479a
-  alterId: 0
-  cipher: auto
-  network: grpc
-  grpc-opts:
-    grpc-service-name: Nbs2DSTSkFWe4KVnk9AHQv
-  tls: true
-  name: 🆓F03-vmess
-- type: vmess
-  server: 172.67.136.12
-  port: 8080
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: www.ywnouvbale.biz
-  name: 🆓F04-vmess
-- type: vmess
-  server: 172.67.137.158
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /guanwang.awsno.com/hls/cctv5phd.m3u8
-    headers:
-      Host: nomino.11hi8itbaf.workers.dev
-  tls: true
-  servername: nomino.11hi8itbaf.workers.dev
-  name: 🆓F05-vmess
-- type: vmess
-  server: 172.67.137.209
-  port: 443
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /London31
-    headers:
-      Host: ukl.lovehk.xyz
-  tls: true
-  servername: ukl.lovehk.xyz
-  name: 🆓F06-vmess
-- type: vmess
-  server: 172.67.138.140
-  port: 443
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /linkws
-    headers:
-      Host: ivideos.sbs
-  tls: true
-  servername: ivideos.sbs
-  name: 🆓F07-vmess
-- type: vmess
-  server: 172.67.142.177
-  port: 443
-  uuid: af4399b8-a152-486b-9cf6-acdd42d6c40c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /London3
-    headers:
-      Host: uk.lovehk.xyz
-  tls: true
-  servername: uk.lovehk.xyz
-  name: 🆓F08-vmess
-- type: vmess
-  server: 172.67.156.121
-  port: 443
-  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /truth
-    headers:
-      Host: www.gptcloudai.com
-  tls: true
-  servername: www.gptcloudai.com
-  name: 🆓F09-vmess
-- type: vmess
   server: 172.67.161.144
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
@@ -160,7 +47,7 @@ proxies:
       Host: v2ray1.dozapp.xyz
   tls: true
   servername: v2ray1.dozapp.xyz
-  name: 🆓F10-vmess
+  name: 🆓F01-vmess
 proxy-groups:
 - name: 节点选择
   type: select
@@ -170,43 +57,16 @@ proxy-groups:
   - 🚀 故障转移
   - 🚀 手动切换
   - 🆓F01-vmess
-  - 🆓F02-vmess
-  - 🆓F03-vmess
-  - 🆓F04-vmess
-  - 🆓F05-vmess
-  - 🆓F06-vmess
-  - 🆓F07-vmess
-  - 🆓F08-vmess
-  - 🆓F09-vmess
-  - 🆓F10-vmess
   - DIRECT
 - name: 🚀 手动切换
   type: select
   proxies:
   - 🆓F01-vmess
-  - 🆓F02-vmess
-  - 🆓F03-vmess
-  - 🆓F04-vmess
-  - 🆓F05-vmess
-  - 🆓F06-vmess
-  - 🆓F07-vmess
-  - 🆓F08-vmess
-  - 🆓F09-vmess
-  - 🆓F10-vmess
   - DIRECT
 - name: 🚀 自动选择
   type: url-test
   proxies: &id001
   - 🆓F01-vmess
-  - 🆓F02-vmess
-  - 🆓F03-vmess
-  - 🆓F04-vmess
-  - 🆓F05-vmess
-  - 🆓F06-vmess
-  - 🆓F07-vmess
-  - 🆓F08-vmess
-  - 🆓F09-vmess
-  - 🆓F10-vmess
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
