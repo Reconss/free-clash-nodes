@@ -34,92 +34,127 @@ dns:
   - +.msftconnecttest.com
   - +.msftncsi.com
 proxies:
-- type: ss
-  server: 193.108.118.247
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  name: 🆓F01-ss
-- type: ss
-  server: 195.238.126.20
-  port: 9068
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-  name: 🆓F02-ss
+- port: 6666
+  server: 218.77.50.79
+  type: socks5
+  name: 🆓F01-socks5
 - type: vmess
-  server: 38.91.106.182
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  server: 47.243.92.155
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
-  network: tcp
-  tls: true
-  servername: xmfhlpy.com
-  name: 🆓F03-vmess
-- type: trojan
-  server: 193.108.119.15
-  port: 443
-  uuid: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  skip-cert-verify: false
-  sni: courses.iloverussia2026.com
-  name: 🆓F04-trojan
-- type: vless
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  tls: true
-  servername: yahoo.com
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
-  skip-cert-verify: false
-  name: 🆓F05-vless
-- type: trojan
-  server: 66.163.114.45
-  port: 443
-  uuid: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  skip-cert-verify: false
-  sni: cdn.findconnectwithemployersandbuildprofessionalnetwork.com
-  name: 🆓F06-trojan
-- type: ss
-  server: 82.38.31.192
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  name: 🆓F07-ss
-- type: vless
-  server: 103.201.131.202
-  port: 2053
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  client-fingerprint: unsafe
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /ws-vmess
     headers:
-      Host: jp3.yohototo.top
-  skip-cert-verify: false
-  name: 🆓F08-vless
+      Host: mTCKUNDiGePwU3uP.v.3dns.vip
+  tls: true
+  servername: mTCKUNDiGePwU3uP.v.3dns.vip
+  name: 🆓F02-vmess
 - type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 47.243.65.243
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: lcv8v9l7oyamxxfz.v.3dns.vip
+  tls: true
+  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  name: 🆓F03-vmess
+- type: vless
+  server: 67.159.52.51
+  port: 443
+  uuid: a0fa7e19-70ec-41e0-b0cc-bcc984d4201a
+  tls: true
+  servername: snp.bsh-net.ru
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: iE4sTz-Q2Frkm7WM32P1wm4at49Wpaj5vo-2FsLcN1M
+    short-id: 8854f17e2a5af2d8
+  skip-cert-verify: false
+  name: 🆓F04-vless
+- type: vless
+  server: 47.74.3.200
+  port: 443
+  uuid: 7fb42fab-ea8a-4f0f-af9e-55df8ae6cb1d
+  tls: true
+  servername: www.logitech.com
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: kb1uhDsBcfsCD6acCuFcVERW29dscNGIjKPd67NArVk
+    short-id: ab3b914f0c9d9de5
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  name: 🆓F05-vless
+- type: vless
+  server: 104.18.33.45
+  port: 2096
+  uuid: 128d1209-9e9f-4952-9faf-df47ae3648d2
+  tls: true
+  servername: 490RvDeCdQ.bElAnImAn.InFo
+  network: ws
+  ws-opts:
+    path: /
+  client-fingerprint: firefox
+  name: 🆓F06-vless
+- type: vmess
+  server: 39.108.113.127
+  port: 10086
+  uuid: b0253c6c-0b96-4950-bde1-669f13bc1a01
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers: {}
+  name: 🆓F07-vmess
+- type: vmess
+  server: 13.249.231.85
+  port: 443
+  uuid: a84c132a-3151-40fe-947b-4dd9a7d2122c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: d7pu5mzr9c4b0.cloudfront.net
+  tls: true
+  servername: d7pu5mzr9c4b0.cloudfront.net
+  name: 🆓F08-vmess
+- type: vmess
+  network: ws
+  server: 8.217.13.103
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  servername: qtkdr8jxe3wefxjm.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: qtkdr8jxe3wefxjm.v.3dns.vip
+    path: /
   name: 🆓F09-vmess
-- type: hysteria2
-  server: 208.69.78.217
-  port: 21080
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
+- type: trojan
+  server: 172.237.0.160
+  port: 443
+  uuid: humanity
+  password: humanity
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.cordweave.com
   skip-cert-verify: true
-  name: 🆓F10-hysteria2
+  sni: www.cordweave.com
+  name: 🆓F10-trojan
 proxy-groups:
 - name: 节点选择
   type: select
@@ -128,44 +163,44 @@ proxy-groups:
   - 🚀 自动选择
   - 🚀 故障转移
   - 🚀 手动切换
-  - 🆓F01-ss
-  - 🆓F02-ss
+  - 🆓F01-socks5
+  - 🆓F02-vmess
   - 🆓F03-vmess
-  - 🆓F04-trojan
+  - 🆓F04-vless
   - 🆓F05-vless
-  - 🆓F06-trojan
-  - 🆓F07-ss
-  - 🆓F08-vless
+  - 🆓F06-vless
+  - 🆓F07-vmess
+  - 🆓F08-vmess
   - 🆓F09-vmess
-  - 🆓F10-hysteria2
+  - 🆓F10-trojan
   - DIRECT
 - name: 🚀 手动切换
   type: select
   proxies:
-  - 🆓F01-ss
-  - 🆓F02-ss
+  - 🆓F01-socks5
+  - 🆓F02-vmess
   - 🆓F03-vmess
-  - 🆓F04-trojan
+  - 🆓F04-vless
   - 🆓F05-vless
-  - 🆓F06-trojan
-  - 🆓F07-ss
-  - 🆓F08-vless
+  - 🆓F06-vless
+  - 🆓F07-vmess
+  - 🆓F08-vmess
   - 🆓F09-vmess
-  - 🆓F10-hysteria2
+  - 🆓F10-trojan
   - DIRECT
 - name: 🚀 自动选择
   type: url-test
   proxies: &id001
-  - 🆓F01-ss
-  - 🆓F02-ss
+  - 🆓F01-socks5
+  - 🆓F02-vmess
   - 🆓F03-vmess
-  - 🆓F04-trojan
+  - 🆓F04-vless
   - 🆓F05-vless
-  - 🆓F06-trojan
-  - 🆓F07-ss
-  - 🆓F08-vless
+  - 🆓F06-vless
+  - 🆓F07-vmess
+  - 🆓F08-vmess
   - 🆓F09-vmess
-  - 🆓F10-hysteria2
+  - 🆓F10-trojan
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
