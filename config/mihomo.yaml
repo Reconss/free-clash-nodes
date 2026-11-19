@@ -34,127 +34,124 @@ dns:
   - +.msftconnecttest.com
   - +.msftncsi.com
 proxies:
-- port: 6666
-  server: 218.77.50.79
-  type: socks5
-  name: 🆓F01-socks5
-- type: vmess
-  server: 47.243.92.155
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+- server: 168.110.21.56
+  port: 18453
+  type: vless
+  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
+  tls: false
+  network: tcp
+  name: 🆓F01-vless
+- server: 38.68.135.131
+  port: 1270
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: mTCKUNDiGePwU3uP.v.3dns.vip
   tls: true
-  servername: mTCKUNDiGePwU3uP.v.3dns.vip
+  servername: xmfhlpy.com
+  network: tcp
   name: 🆓F02-vmess
-- type: vmess
-  server: 47.243.65.243
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+- server: 162.251.62.44
+  port: 1270
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: lcv8v9l7oyamxxfz.v.3dns.vip
   tls: true
-  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  servername: xmfhlpy.com
+  network: tcp
   name: 🆓F03-vmess
 - type: vless
-  server: 67.159.52.51
+  server: 85.137.165.97
   port: 443
-  uuid: a0fa7e19-70ec-41e0-b0cc-bcc984d4201a
+  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
   tls: true
-  servername: snp.bsh-net.ru
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: iE4sTz-Q2Frkm7WM32P1wm4at49Wpaj5vo-2FsLcN1M
-    short-id: 8854f17e2a5af2d8
+  servername: kclx.eu.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /154.16.10.34-8080
+    headers:
+      Host: kclx.eu.org
   skip-cert-verify: false
   name: 🆓F04-vless
 - type: vless
-  server: 47.74.3.200
-  port: 443
-  uuid: 7fb42fab-ea8a-4f0f-af9e-55df8ae6cb1d
+  server: 116.204.164.17
+  port: 7443
+  uuid: ef8907eb-8bb5-4735-80f2-1d0068500d95
   tls: true
-  servername: www.logitech.com
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: kb1uhDsBcfsCD6acCuFcVERW29dscNGIjKPd67NArVk
-    short-id: ab3b914f0c9d9de5
-  client-fingerprint: chrome
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
   skip-cert-verify: false
   name: 🆓F05-vless
 - type: vless
-  server: 104.18.33.45
-  port: 2096
-  uuid: 128d1209-9e9f-4952-9faf-df47ae3648d2
+  server: 95.130.84.36
+  port: 8443
+  uuid: 8d42d29a-ed53-4684-a9ff-6b33826149de
   tls: true
-  servername: 490RvDeCdQ.bElAnImAn.InFo
+  servername: aio.eth0.dpdns.org
+  client-fingerprint: unsafe
   network: ws
   ws-opts:
-    path: /
-  client-fingerprint: firefox
-  name: 🆓F06-vless
-- type: vmess
-  server: 39.108.113.127
-  port: 10086
-  uuid: b0253c6c-0b96-4950-bde1-669f13bc1a01
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers: {}
-  name: 🆓F07-vmess
-- type: vmess
-  server: 13.249.231.85
-  port: 443
-  uuid: a84c132a-3151-40fe-947b-4dd9a7d2122c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess
+    path: /aioproxybot/94.23.144.99-2053
     headers:
-      Host: d7pu5mzr9c4b0.cloudfront.net
-  tls: true
-  servername: d7pu5mzr9c4b0.cloudfront.net
-  name: 🆓F08-vmess
-- type: vmess
-  network: ws
-  server: 8.217.13.103
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  servername: qtkdr8jxe3wefxjm.v.3dns.vip
+      Host: aio.eth0.dpdns.org
   skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: qtkdr8jxe3wefxjm.v.3dns.vip
-    path: /
-  name: 🆓F09-vmess
-- type: trojan
-  server: 172.237.0.160
-  port: 443
-  uuid: humanity
-  password: humanity
+  name: 🆓F06-vless
+- type: vless
+  server: ::ffff:681f:10c5
+  port: 80
+  uuid: 95f1f90e-8d42-4fe7-e26a-64c8b292a13f
+  tls: false
   network: ws
   ws-opts:
-    path: /assignment
+    path: /whoiam
     headers:
-      Host: www.cordweave.com
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  name: 🆓F10-trojan
+      Host: cLUb.PRe-LoAd.sitE
+  skip-cert-verify: false
+  name: 🆓F07-vless
+- type: vless
+  server: 185.146.173.20
+  port: 80
+  uuid: a1acd85e-857f-4b89-9a5f-4ad83a35ef86
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: AERo.SHoKR.DE
+  skip-cert-verify: false
+  name: 🆓F08-vless
+- type: vless
+  server: 164.90.176.31
+  port: 2083
+  uuid: a747c516-34bd-41b8-8590-a9d1edb79e95
+  tls: true
+  servername: summer-hall-8b23.asddsaasan.workers.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: summer-hall-8b23.asddsaasan.workers.dev
+  skip-cert-verify: false
+  name: 🆓F09-vless
+- type: vless
+  server: 178.239.148.9
+  port: 8766
+  uuid: 6156b3d8-8962-4a73-98eb-9ef200cc5d78
+  tls: true
+  servername: au2-images.shop.samsung.com
+  reality-opts:
+    public-key: mkmbUzXNhfK3T-zIQw63BAboujTQkDueR3Q_GHG_bGE
+    short-id: 75152ae2
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  name: 🆓F10-vless
 proxy-groups:
 - name: 节点选择
   type: select
@@ -163,44 +160,44 @@ proxy-groups:
   - 🚀 自动选择
   - 🚀 故障转移
   - 🚀 手动切换
-  - 🆓F01-socks5
+  - 🆓F01-vless
   - 🆓F02-vmess
   - 🆓F03-vmess
   - 🆓F04-vless
   - 🆓F05-vless
   - 🆓F06-vless
-  - 🆓F07-vmess
-  - 🆓F08-vmess
-  - 🆓F09-vmess
-  - 🆓F10-trojan
+  - 🆓F07-vless
+  - 🆓F08-vless
+  - 🆓F09-vless
+  - 🆓F10-vless
   - DIRECT
 - name: 🚀 手动切换
   type: select
   proxies:
-  - 🆓F01-socks5
+  - 🆓F01-vless
   - 🆓F02-vmess
   - 🆓F03-vmess
   - 🆓F04-vless
   - 🆓F05-vless
   - 🆓F06-vless
-  - 🆓F07-vmess
-  - 🆓F08-vmess
-  - 🆓F09-vmess
-  - 🆓F10-trojan
+  - 🆓F07-vless
+  - 🆓F08-vless
+  - 🆓F09-vless
+  - 🆓F10-vless
   - DIRECT
 - name: 🚀 自动选择
   type: url-test
   proxies: &id001
-  - 🆓F01-socks5
+  - 🆓F01-vless
   - 🆓F02-vmess
   - 🆓F03-vmess
   - 🆓F04-vless
   - 🆓F05-vless
   - 🆓F06-vless
-  - 🆓F07-vmess
-  - 🆓F08-vmess
-  - 🆓F09-vmess
-  - 🆓F10-trojan
+  - 🆓F07-vless
+  - 🆓F08-vless
+  - 🆓F09-vless
+  - 🆓F10-vless
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
